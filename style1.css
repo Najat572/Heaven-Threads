@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+}
+h1
+{
+    position: relative;
+    top: 15px;
+}
+#header
+{
+    margin-left: 40px;
+    display: flex;
+    margin-top: 20px;
+}
+#searchbar
+{
+    margin-top: 20px;
+    color: black;
+    border-radius: 3px;
+}
+.searching
+{
+    position: relative;
+    top:14px;
+    left: 130%;
+    z-index: 20;
+    background-color: black;
+    height: 38px;
+    width: 30px;
+}
+label
+{
+    color: white;
+}
+label:hover
+{
+    color: lightcoral;
+}
+input
+{
+    padding: 10px;
+    position: relative;
+    left:35%;
+    width: 500px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.side 
+{
+    position: relative;
+    left: 38%;
+    margin-right: 25px;
+    width: 30%;
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#favorites
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(340px,1fr));
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+button
+{
+    margin-top: 55px;
+    padding: 10px;
+    font-size: larger;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    width: 290px;
+    position: relative;
+    right:43px;
+    bottom: 20px;
+}
+
+
+.addcart button:hover
+{
+    background-color:white;
+    color: black;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.addcart button:active
+{
+    color: white;
+    background-color: black;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.remove-favorite
+{
+    position: relative;
+    bottom: 468px;
+    left: 246px;
+}
+
+.box-container
+{
+    height: 525px;
+    margin-top: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-bottom: 50px;
+
+}
+#box
+{
+    border: 1px solid;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    position: relative;
+   
+}
+h3
+{
+    text-align: center;
+}
+.img-box
+{
+    width: 100%;
+    height: auto;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.images
+{
+    width: 40%;
+    height: 200px;
+    margin: 0px auto;
+}
+.bottom
+{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+.button1
+{
+    margin: 0px auto;
+    border-radius: 11px;
+    padding: 14px;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right:26px;
+}
+.js
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 100%;
+    font-size: xx-large;
+    color: rgb(3, 3, 3);
+}
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    gap: 100px;
+    cursor: pointer;
+    margin-top: 100px;
+    padding-right: 15px;
+}
+.col1
+{
+    margin-bottom: 20px;
+    margin-left: 10px; 
+}
+.col3
+{
+    width:26%;
+}
+.social-media
+{
+    display:flex;
+    flex-direction: column;
+   
+}
+.footer span,p
+{
+    color: lightgray;
+}
+.footer span:hover
+{
+    color: white;
+    text-decoration:underline;
+}
+.footer .text:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+

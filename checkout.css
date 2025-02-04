@@ -1,0 +1,181 @@
+body{
+    background-color:black;
+    color:white;
+}
+#checkout{
+    max-width:40%;
+    margin:5% 5%;
+    padding:40px;
+    border-radius:10px;
+    
+    
+  }
+  #country {
+    width:100%;
+    padding:5px;
+    border-radius:5px;
+    border:1px solid white;
+    margin:10px 0 20px 0;
+  }
+  #name {
+    display:flex;
+    flex-direction:row;
+    gap:60px;
+    align-items:center;
+    margin:10px 0 20px 0;
+  }
+#company{
+  width:95%;
+    padding:5px;
+    border-radius:5px;
+    border:1px solid white;
+    margin:10px 3px 20px 1px;
+}
+.personalinfo{
+  display:flex;
+  flex-direction:row;
+  gap:60px;
+  align-items:center;
+  margin:10px 0 20px 0;
+}
+  
+.city{
+  display:flex;
+  flex-direction:row;
+  gap:60px;
+  align-items:center;
+  margin:10px 0 20px 0;
+}
+#textbox{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:10px;
+}
+#checkout{
+  box-shadow: 
+  10px 0px 10px -6px  #90e0ef  ,
+  -10px 0px 10px -6px pink,
+   0px 10px 10px -6px  #90e0ef ,
+   0px -10px 10px -6px pink;
+
+ 
+  
+}
+#displaycolumn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#checkouttotal{
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius:10px;
+  width: 80%;
+  height: 30%;
+  margin-left:30px;
+  box-shadow: 
+  0px 0px 10px 6px   #90e0ef ;
+}
+#checkoutbtn{
+  margin-left:250px;
+  padding:10px;
+  border-radius:10px;
+  background-color:black;
+  color:white;
+}
+input{
+  padding:6px;
+  border-radius:10px;
+}
+
+
+#checkoutproducts{
+  width: 100%;
+  border:2px solid white;
+  margin-bottom:100px;
+  padding:8px;
+}
+
+#checkoutitem{
+  
+  
+  display:flex;
+  flex-direction: column; 
+  gap:0px;
+  width:95%;
+  padding:1px;
+  justify-content:space-around;
+  align-items:center;
+ margin:3px 0px 5px 10px;
+  height:70px;
+ 
+  background-color:white;
+}
+
+#checkoutheaddiv  img{
+  width: 55px;
+  height: 53px;
+  margin:0 20px 0 0px;
+}
+#checkoutheaddiv  {
+  display:flex;
+  flex-direction:row;
+  gap:1px;
+  
+  height:80%;
+  width:100%;
+  color:black;
+ 
+}
+
+#checkoutnameinhead {
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+  gap:3px;
+ 
+}
+#title{
+  margin:4px;
+font-weight:bold;
+  font-size:18px;
+  height:20px;
+  color:black;
+}
+
+#description{
+  margin:0px;
+  font-size:12px;
+  height:20px;
+  color:black;
+}
+.checkoutcancel{
+
+  margin-top:4px;
+  width:30px;
+margin-left:auto;
+  padding-left:10px;
+}
+.checkoutcancel button{
+  border:none;
+  cursor:pointer;
+  background-color:white;
+  
+}
+
+#price{
+width:10%;
+ color:black;
+ align-items:right;
+ margin-left:auto;
+margin-left:290px;
+padding-bottom:1px;
+}
+#totalsum{
+  display:flex;
+  flex-direction:row;
+  gap:3px;
+}

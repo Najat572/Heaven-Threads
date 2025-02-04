@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="icon" href="/diamond-clipart-design-illustration-free-png (1).webp">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+  <title>Heaven Threads</title>
+</head>
+
+
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding-top: 50px;
+  }
+
+  .logo {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .links li a {
+    padding: 8px 12px;
+    color: black;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+
+  .links li a:hover {
+    background-color: #f4f4f4;
+    border-radius: 4px;
+  }
+
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .burger-menu div {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay.active {
+    display: block;
+    opacity: 1;
+  }
+
+  .mobile-navigation {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: right 0.3s ease;
+    box-shadow: 10px 5px 5px black;
+  }
+
+  .mobile-navigation.active {
+    right: 0;
+  }
+
+  .close {
+    align-self: flex-end;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .mobile-links {
+    list-style: none;
+    width: 100%;
+  }
+
+  .mobile-links li a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+  }
+
+  @media (max-width: 650px) {
+    .links {
+      display: none;
+    }
+
+    .burger-menu {
+      display: flex;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">HEAVEN THREADS</div>
+    <nav>
+      <ul class="links">
+        <li><a href="#Discover">Discover</a></li>
+        <li><a href="#Shop">Shop</a></li>
+        <li><a href="#Contact-us"> Contact us</a></li>
+        <li><a href="Heaventhreads.html"><i class="fa fa-user"></i></a></li>
+      </ul>
+
+      <div class="burger-menu" id="menu-burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="mobile-navigation" id="mobile-navigation">
+    <span class="close" id="close">&times;</span>
+    <ul class="mobile-links">
+      <li><a href="#Discover">Discover</a></li>
+      <li><a href="#Shop">Shop</a></li>
+      <li><a href="#Contact">Contact us</a></li>
+      <li><a href="Project Web Ecommerce Final Version\Login.html"><i class="fa fa-user"></i></a></li>
+    </ul>
+  </div>
+
+
+
+
+  <style>
+    .bg-section {
+
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 60px;
+      overflow: hidden;
+    }
+
+    .bg-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/medium-shot-model-posing-with-chair-black-white\ \(1\).jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+
+    .bg-text {
+      z-index: 2;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .bg-text h1 {
+
+      font-size: 50px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .bg-text p {
+      font-size: 20px;
+      line-height: 1.5;
+
+    }
+
+    .bg-text button {
+      padding: 15px;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      width: 200px;
+      cursor: pointer;
+      color: white;
+      transition: all 0.5s ease;
+
+    }
+
+
+
+
+    .bg-text button:hover {
+      background-color: white;
+      color: black;
+      transform: scale(1.05);
+      font-size: 20px;
+    }
+
+
+
+    @media(max-width:900px) {
+      .bg-text {
+        width: 80%;
+        position: absolute;
+        left: 9%;
+
+
+      }
+    }
+
+    @media(max-width:900px) {
+      .bg-text h1 {
+        font-size: 50px;
+        width: 80%;
+      }
+    }
+  </style>
+
+
+  <section class="bg-section">
+
+    <div class="bg-container"></div>
+    <div class="bg-text">
+      <h1>Discover the beauty of Heaven Threads</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit id metus ultricies consectetur vel vel
+        eros. Nulla facilisi. Nullam vel libero vel ligula bibendum laoreet.</p>
+      <a href="#Discover"><button>Discover</button></a>
+    </div>
+
+  </section>
+
+  <style>
+    .conetnt {
+      text-align: center;
+      font-size: 29px;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+
+    hr {
+      width: 100%;
+      border: 1px solid black;
+      margin: 0;
+    }
+
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+
+    }
+  </style>
+  
+
+
+
+  <section class="section-2">
+
+
+    <div style="display:flex;flex-direction: column; align-items: center; width:100%;">
+
+
+      <hr style="flex:1;">
+
+
+      <span id="fashionText" class="typeWriter conetnt" style="padding:30px"></span>
+
+
+      <hr style="flex:1;">
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <div
+    style="display: flex; flex-direction: column; gap: 8px; margin-left: 65px; margin-top: 50px; margin-bottom: 30px;">
+    <p
+      style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; color: #333; letter-spacing: 1px; text-transform: uppercase;">
+      Dynamic
+    </p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 14px; color: #555; font-style: italic;">
+      Ignite your spirit and soar.
+    </p>
+  </div>
+
+
+
+  <section id="Discover">
+    <div class="section-3" style="display:flex; justify-content: space-between;">
+
+      <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        @media(max-width:900px) {
+          .section-3 {
+            flex-direction: column;
+
+          }
+
+          .products {
+            display: flex !important;
+            flex-direction: column;
+            gap: 10px !important;
+
+            width: 100% !important;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            order: 2;
+
+          }
+
+          .product {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 10px;
+
+
+
+          }
+
+          .product .image {
+            width: 120px !important;
+            height: 130px !important;
+          }
+
+          .line {
+            display: none !important;
+          }
+
+          .product:not(:last-child) {
+            position: relative;
+            /* Make sure the line appears below each product */
+          }
+
+          .product:not(:last-child):after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            /* Make it more visible */
+            background: #eae4e4;
+            /* Use background instead of color */
+            bottom: -10px;
+            /* Align it properly */
+            left: 0;
+
+          }
+
+
+          .text {
+            padding: 0;
+            margin-left: 15px;
+            display: flex !important;
+            flex-direction: column !important;
+
+          }
+
+          .text p {
+            text-align: start;
+          }
+
+          .product button {
+            margin-top: 10px;
+          }
+
+          .view-details {
+            width: 100px !important;
+          }
+
+          .video {
+            width: 80% !important;
+            height: 300px;
+            object-fit: cover;
+            order: 1;
+            margin: auto;
+          }
+        }
+
+        .modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          justify-content: center;
+          align-items: center;
+          z-index: 3000;
+        }
+
+        .modal-content {
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          width: 50%;
+          position: relative;
+          text-align: center;
+        }
+
+        .close {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+
+        .view-details:hover {
+          background-color: rgb(245, 245, 245) !important;
+        }
+      </style>
+      <div class="products"
+        style="width:50%;display:grid;grid-template-columns: repeat(2,1fr);place-items: center;gap:30px;position:relative;padding: 10px;">
+
+
+        <div class="line"
+          style="position: absolute; top: 10px; left: 50%; width: 1.5px; height: 45%; background: #eae4e4; transform: translateX(-50%);">
+        </div>
+
+        <!-- Vertical Divider (Bottom Half) -->
+        <div class="line"
+          style="position: absolute; bottom: 0; left: 50%; width: 1.5px; height: 45%; background: #eae4e4; transform: translateX(-50%);">
+        </div>
+
+        <!-- Horizontal Divider (Left Half) -->
+        <div class="line"
+          style="position: absolute; top: 50%; left: 10px; width: 90%; height: 1px; background: #eae4e4; transform: translateY(-50%);">
+        </div>
+
+
+
+        <div id="product-1" class="product" style="text-align: center;display:flex;flex-direction:column;gap:10px;">
+
+
+          <div class="image" style="width:150px; height:170px; overflow:hidden;">
+            <img src="images/2000393637_280_P1.jpg" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="text" style="display:flex;flex-direction: column;gap:7px;">
+            <p class="product-name"
+              style="font-size: 16px; font-weight: bold; text-transform: capitalize; color: #333; margin-bottom: 1px;">
+              Embroidered suede vest
+            </p>
+
+            <p class="product-price" style="font-size: 14px; color: #555; font-weight: 600; margin-bottom: 5px;">
+              $600
+            </p>
+
+            <button class="view-details"
+              style="background-color:  white;color:black;padding: 13px; border:1px solid black;cursor:pointer;">View
+              details</button>
+          </div>
+        </div>
+
+        <div id="product-2" class="product" style="text-align: center;display:flex;flex-direction:column;gap:10px;">
+
+
+          <div class="image" style="width:150px; height:170px; overflow:hidden;">
+            <img src="images/images (5).jpg" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="text" style="display:flex;flex-direction: column;gap:7px;">
+            <p class="product-name"
+              style="font-size: 16px; font-weight: bold; text-transform: capitalize; color: #333; margin-bottom: 1px;">
+              Explorer Suede Overcoat
+
+
+
+            </p>
+
+            <p class="product-price" style="font-size: 14px; color: #555; font-weight: 600; margin-bottom: 5px;">
+              $300
+            </p>
+
+            <button class="view-details"
+              style="background-color:  white;color:black;padding: 13px; border:1px solid black;cursor:pointer;">View
+              details</button>
+          </div>
+        </div>
+
+        <div id="product-3" class="product" style="text-align: center;display:flex;flex-direction:column;gap:10px;">
+
+
+          <div class="image" style="width:150px; height:170px; overflow:hidden;">
+            <img src="images/205344_3.webp" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="text" style="display:flex;flex-direction: column;gap:7px;">
+            <p class="product-name"
+              style="font-size: 16px; font-weight: bold; text-transform: capitalize; color: #333; margin-bottom: 1px;">
+              Vanguard Suede Blazer
+            </p>
+
+            <p class="product-price" style="font-size: 14px; color: #555; font-weight: 600; margin-bottom: 5px;">
+              $1,00
+            </p>
+
+            <button class="view-details"
+              style="background-color:  white;color:black;padding: 13px; border:1px solid black;cursor:pointer;">View
+              details</button>
+          </div>
+        </div>
+
+        <div id="product-4" class="product" style="text-align: center;display:flex;flex-direction:column;gap:10px;">
+
+
+          <div class="image" style="width:150px; height:170px; overflow:hidden;">
+            <img src="images/63ec5772f6fceaff12a962f4181ed366.jpg" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="text" style="display:flex;flex-direction: column;gap:7px;">
+            <p class="product-name"
+              style="font-size: 16px; font-weight: bold; text-transform: capitalize; color: #333; margin-bottom: 1px;">
+              Linen Wrap Shirt
+            </p>
+
+            <p class="product-price" style="font-size: 14px; color: #555; font-weight: 600; margin-bottom: 5px;">
+              $400
+            </p>
+
+            <button class="view-details"
+              style="background-color:  white;color:black;padding: 13px; border:1px solid black;cursor:pointer;">View
+              details</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="video" style="width:50%;height:700px;overflow: hidden;">
+
+        <video src="/3888268-uhd_2160_4096_25fps.mp4" style="width:100%;height:100%;object-fit: cover;" autoplay muted
+          loop></video>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <style>
+
+    .modal {
+      width: 100%;
+      
+    }
+
+    .modal-content {
+      width: 80%;
+      height: 400px;
+      margin: 50px auto;
+    
+      background: #fff;
+      position: relative;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+
+
+    .modal-body {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+    }
+
+
+    .modal-image-container {
+      width: 210px;
+      height: 250px;
+    }
+
+    .modal-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    .modal-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 50%;
+      gap: 20px;
+    }
+
+    .modal-text h2,
+    .modal-text p {
+      margin: 0;
+      text-align: start;
+    }
+
+   
+    .modal-text h2 {
+      font-family: serif;
+      font-size: 20px;
+      color: black;
+      margin-bottom: 15px;
+    }
+
+    .modal-text p {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+
+    #modal-description {
+      text-align: justify;
+      font-family: sans-serif;
+      font-size: 16px;
+      color: black;
+      line-height: 1.2;
+    }
+
+
+    .modal-quantity .quantity-label {
+      margin: 5px 0;
+      text-align: start;
+    }
+
+    .quantity-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .quantity-controls button {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      padding: 8px;
+      width: 35px;
+      font-size: 18px;
+    }
+
+   
+    .add-to-cart {
+      width: 100%;
+      padding: 13px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .modal-content {
+        width: 50%;
+      }
+
+      #modal-name {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      #modal-description {
+        font-size: 10px;
+        margin-bottom: 6px;
+
+
+      }
+
+      .modal-quantity p {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      .modal-quantity .quantity-controls p {
+        margin-bottom: 5px;
+      }
+
+      .modal-quantity .quantity-controls button {
+        font-size: 16px;
+        padding: 5px;
+      }
+
+      .add-to-cart {
+        padding: 9px;
+        margin-top: 5px;
+
+      }
+    }
+
+    @media(min-width:750px) {
+      .modal-content {
+        width: 50%;
+      }
+    }
+
+    .add-to-cart {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .add-to-cart:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+    }
+
+    .close-model {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+
+    }
+  </style>
+
+
+  
+  <div class="modal" id="product-model">
+    <div class="modal-content">
+      <span class="close-model">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image-container">
+          <img id="modal-image" src="" alt="Product Image" />
+        </div>
+
+        <div class="modal-info">
+          <div class="modal-text">
+            <h2 id="modal-name">Product Name</h2>
+            <p id="modal-price">Price</p>
+            <p id="modal-description">
+              The embroidered suede vest is a stylish, soft piece with intricate embroidery,
+              offering a blend of comfort and bohemian charm. Perfect for layering over casual
+              or semi-formal outfits.
+            </p>
+          </div>
+
+          <div class="modal-quantity">
+            <p class="quantity-label">Quantity</p>
+            <div class="quantity-controls">
+              <button id="decrease">-</button>
+              <span id="quantity">1</span>
+              <button id="increase">+</button>
+            </div>
+          </div>
+
+          <button class="add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div
+    style="display: flex; flex-direction: column; gap: 8px; margin-left: 65px; margin-top: 50px; margin-bottom: 30px;">
+    <p
+      style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; color: #333; letter-spacing: 1px; text-transform: uppercase;">
+      Timeless Style
+    </p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 14px; color: #555; font-style: italic;">
+      Elevate your wardrobe with elegance.
+    </p>
+  </div>
+
+
+
+
+  <section>
+    <div class="section-4" style="display:flex; justify-content: space-between;">
+
+      <div class="video-section-4" style="width:50%;height:700px;overflow: hidden;">
+
+        <video src="/3205919-hd_1080_1920_25fps.mp4" style="width:100%;height:100%;object-fit: cover;" autoplay muted
+          loop></video>
+
+      </div>
+
+
+      <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        @media(max-width:900px) {
+          .section-4 {
+            flex-direction: column;
+
+          }
+
+          .products-section-4 {
+            display: flex !important;
+            flex-direction: column;
+            gap: 10px !important;
+
+            width: 100% !important;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            order: 2;
+
+          }
+
+          .product-section-4 {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 10px;
+
+
+
+          }
+
+          .product-section-4 .image-section-4 {
+            width: 120px !important;
+            height: 130px !important;
+          }
+
+          .line-section-4 {
+            display: none !important;
+          }
+
+          .product-section-4:not(:last-child) {
+            position: relative;
+            /* Make sure the line appears below each product */
+          }
+
+          .product-section-4:not(:last-child):after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            /* Make it more visible */
+            background: #eae4e4;
+            /* Use background instead of color */
+            bottom: -10px;
+            /* Align it properly */
+            left: 0;
+
+          }
+
+
+          .text-section-4 {
+            padding: 0;
+            margin-left: 15px;
+            display: flex !important;
+            flex-direction: column !important;
+
+          }
+
+          .text-section-4 {
+            text-align: start;
+          }
+
+          .product-section-4 button {
+            margin-top: 10px;
+          }
+
+          .view-details-section-4 {
+            width: 100px !important;
+          }
+
+          .video-section-4 {
+            width: 80% !important;
+            height: 300px;
+            object-fit: cover;
+            order: 1;
+            margin: auto;
+          }
+        }
+
+        .modal-section-4 {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          justify-content: center;
+          align-items: center;
+          z-index: 3000;
+        }
+
+        .modal-content-section-4 {
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          width: 50%;
+          position: relative;
+          text-align: center;
+        }
+
+        .view-details-section-4:hover {
+          background-color: rgb(245, 245, 245) !important;
+        }
+      </style>
+      <div class="products-section-4"
+        style="width:50%;display:grid;grid-template-columns: repeat(2,1fr);place-items: center;gap:30px;position:relative;padding: 10px;">
+
+
+        <div class="line-section-4"
+          style="position: absolute; top: 10px; left: 50%; width: 1.5px; height: 45%; background: #eae4e4; transform: translateX(-50%);">
+        </div>
+
+        <!-- Vertical Divider (Bottom Half) -->
+        <div class="line-section-4"
+          style="position: absolute; bottom: 0; left: 50%; width: 1.5px; height: 45%; background: #eae4e4; transform: translateX(-50%);">
+        </div>
+
+        <!-- Horizontal Divider (Left Half) -->
+        <div class="line-section-4"
+          style="position: absolute; top: 50%; left: 10px; width: 90%; height: 1px; background: #eae4e4; transform: translateY(-50%);">
+        </div>
+
+
+
+        <div id="product-1-section-4" class="product-section-4"
+          style="text-align: center;display:flex;flex-direction:column;gap:10px;">
+
+
+          <div class="image-section-4" style="width:150px; height:170px; overflow:hidden;">
+            <img src="images/I-14075WL-SBN_BLACK_800x.webp" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="text-section-4" style="display:flex;flex-direction: column;gap:7px;">
+            <p class="product-name-section-4"
+              style="font-size: 16px; font-weight: bold; text-transform: capitalize; color: #333; margin-bottom: 1px;">
+              Lace-Trimmed Blouse
+            </p>
+
+            <p class="product-price-section-4"
+              style="font-size: 14px; color: #555; font-weight: 600; margin-bottom: 5px;">
+              $900
+            </p>
+
+            <button class="view-details-section-4"
+              style="background-color:  white;color:black;padding: 13px; border:1px solid black;cursor:pointer;">View
+              details</button>
+          </div>
+        </div>
+
+        <div id="product-2-section-4" class="product-section-4"
+          style="text-align: center;display:flex;flex-direction:column;gap:10px;">
+
+
+          <div class="image-section-4" style="width:150px; height:170px; overflow:hidden;">
+            <img src="images/images (3).jpg" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="text-section-4" style="display:flex;flex-direction: column;gap:7px;">
+            <p class="product-name-section-4"
+              style="font-size: 16px; font-weight: bold; text-transform: capitalize; color: #333; margin-bottom: 1px;">
+
+              Heritage Suede Bomber
+            </p>
+
+            <p class="product-price-section-4"
+              style="font-size: 14px; color: #555; font-weight: 600; margin-bottom: 5px;">
+              $300
+            </p>
+
+            <button class="view-details-section-4"
+              style="background-color:  white;color:black;padding: 13px; border:1px solid black;cursor:pointer;">View
+              details</button>
+          </div>
+        </div>
+
+        <div id="product-3-section-4" class="product-section-4"
+          style="text-align: center;display:flex;flex-direction:column;gap:10px;">
+
+
+          <div class="image-section-4" style="width:150px; height:170px; overflow:hidden;">
+            <img src="images/images (4).jpg" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="text-section-4" style="display:flex;flex-direction: column;gap:7px;">
+            <p class="product-name-section-4"
+              style="font-size: 16px; font-weight: bold; text-transform: capitalize; color: #333; margin-bottom: 1px;">
+              Rustic Suede Field Coat
+            </p>
+
+            <p class="product-price-section-4"
+              style="font-size: 14px; color: #555; font-weight: 600; margin-bottom: 5px;">
+              $1,000
+            </p>
+
+            <button class="view-details-section-4"
+              style="background-color:  white;color:black;padding: 13px; border:1px solid black;cursor:pointer;">View
+              details</button>
+          </div>
+        </div>
+
+        <div id="product-4-section-4" class="product-section-4"
+          style="text-align: center;display:flex;flex-direction:column;gap:10px;">
+
+
+          <div class="image-section-4" style="width:150px; height:170px; overflow:hidden;">
+            <img src="images/LL21661_24_F__02363.jpg" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="text-section-4" style="display:flex;flex-direction: column;gap:7px;">
+            <p class="product-name-section-4"
+              style="font-size: 16px; font-weight: bold; text-transform: capitalize; color: #333; margin-bottom: 1px;">
+
+
+              Beaded Suede Tunic
+            </p>
+
+            <p class="product-price-section-4"
+              style="font-size: 14px; color: #555; font-weight: 600; margin-bottom: 5px;">
+              $900
+            </p>
+
+            <button class="view-details-section-4"
+              style="background-color:  white;color:black;padding: 13px; border:1px solid black;cursor:pointer;">View
+              details</button>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <style>
+    .modal-section-4 {
+      width: 100%;
+
+    }
+
+    .modal-content-section-4 {
+      width: 80%;
+      height: 400px;
+      margin: 50px auto;
+    background: #fff;
+      position: relative;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+
+  
+    .modal-body-section-4 {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+    }
+
+
+    .modal-image-container-section-4 {
+      width: 210px;
+      height: 250px;
+    }
+
+    .modal-image-container-section-4 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    .modal-info-section-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 50%;
+      gap: 20px;
+    }
+
+    .modal-text-section-4 h2,
+    .modal-text-section-4 p {
+      margin: 0;
+      text-align: start;
+    }
+
+
+    .modal-text-section-4 h2 {
+      font-family: serif;
+      font-size: 20px;
+      color: black;
+      margin-bottom: 15px;
+    }
+
+    .modal-text-section-4 p {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+  
+    #modal-description-section-4 {
+      text-align: justify;
+      font-family: sans-serif;
+      font-size: 16px;
+      color: black;
+      line-height: 1.2;
+    }
+
+    .modal-quantity-section-4 .quantity-label-section-4 {
+      margin: 5px 0;
+      text-align: start;
+    }
+
+    .quantity-controls-section-4 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .quantity-controls-section-4 button {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      padding: 8px;
+      width: 35px;
+      font-size: 18px;
+    }
+
+    
+    .add-to-cart-section-4 {
+      width: 100%;
+      padding: 13px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+  
+    @media (max-width: 768px) {
+      .modal-content-section-4 {
+        width: 50%;
+      }
+
+      #modal-name-section-4 {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      #modal-description-section-4 {
+        font-size: 10px;
+        margin-bottom: 6px;
+
+
+      }
+
+      .modal-quantity-section-4 p {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      .modal-quantity-section-4 .quantity-controls-section-4 p {
+        margin-bottom: 5px;
+      }
+
+      .modal-quantity-section-4 .quantity-controls-section-4 button {
+        font-size: 16px;
+        padding: 5px;
+      }
+
+      .add-to-cart-section-4 {
+        padding: 9px;
+        margin-top: 5px;
+
+      }
+    }
+
+    @media(min-width:750px) {
+      .modal-content-section-4 {
+        width: 50%;
+      }
+    }
+
+    .add-to-cart-section-4 {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .add-to-cart-section-4:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+
+    .close-model-section-4 {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      cursor: pointer;
+    }
+  </style>
+
+
+  <div class="modal-section-4" id="product-modal-section-4">
+    <div class="modal-content-section-4">
+      <span class="close-model-section-4">&times;</span>
+      <div class="modal-body-section-4">
+        <div class="modal-image-container-section-4">
+          <img id="modal-image-section-4" src="" alt="Product Image" />
+        </div>
+
+        <div class="modal-info-section-4">
+          <div class="modal-text-section-4">
+            <h2 id="modal-name-section-4">Product Name</h2>
+            <p id="modal-price-section-4">Price</p>
+            <p id="modal-description-section-4">
+              The embroidered suede vest is a stylish, soft piece with intricate embroidery,
+              offering a blend of comfort and bohemian charm. Perfect for layering over casual
+              or semi-formal outfits.
+            </p>
+          </div>
+
+          <div class="modal-quantity-section-4">
+            <p class="quantity-label-section-4">Quantity</p>
+            <div class="quantity-controls-section-4">
+              <button id="decrease-section-4">-</button>
+              <span id="quantity-section-4">1</span>
+              <button id="increase-section-4">+</button>
+            </div>
+          </div>
+
+          <button class="add-to-cart-section-4">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="Shop" style="margin-top: 70px;">
+
+    <style>
+      
+      .carousel-wrapper {
+        width: 1200px;
+      
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .category {
+        flex: 0 0 300px;
+
+        position: relative;
+        height: 380px;
+        overflow: hidden;
+        margin-right: 10px;
+
+      }
+
+      .category img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .category p {
+        position: absolute;
+        left: 13px;
+        bottom: 13px;
+        margin: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+      }
+
+      .category i {
+        position: absolute;
+        right: 13px;
+        bottom: 13px;
+        color: #fff;
+      }
+
+   .carousel-controls {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 25px 20px;
+        gap: 20px;
+      }
+
+      .carousel-controls button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      @media (max-width: 1250px) {
+        .carousel-wrapper {
+          width: 100%;
+        }
+      }
+
+      .category {
+        flex: 0 0 300px;
+        position: relative;
+        height: 380px;
+        overflow: hidden;
+        margin-right: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .category:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .category img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+      }
+
+      .category:hover img {
+        opacity: 0.8;
+      }
+
+      .category p,
+      .category i {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .category:hover p {
+        transform: translateY(-5px);
+      }
+
+      .category:hover i {
+        transform: translateX(5px);
+      }
+    </style>
+    <div class="carousel-controls">
+      <p style="font-family: 'Montserrat', serif;font-size: 23px;margin-left:14px;">Journey with style</p>
+
+      <div style="display:flex;gap:20px;">
+        <button class="carousel-arrow" data-direction="left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="carousel-arrow" data-direction="right">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+   
+    <div class="carousel-wrapper">
+
+      <div class="carousel-inner">
+    
+        <div class="category" id="category-1">
+          <a href="jackets.html">
+          <img src="images/woman-wearing-fur-isolated.jpg" alt="Category 1" />
+          <p>Jackets</p>
+        </a>
+          <i class="fa-solid fa-arrow-right"></i>
+
+        </div>
+        
+        <div class="category" id="category-2">
+          <a href="Shirts.html">
+          <img src="images/w2000_q60.avif" alt="Category 2" />
+          <p>Shirts</p>
+        </a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+   
+        <div class="category" id="category-3">
+          <a href="Pants.html">
+          <img src="images/-1117Wx1400H-467016973-black-MODEL.avif" alt="Category 3" />
+          <p>Pants</p>
+          </a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+   
+        <div class="category" id="category-4">
+          <a href="dresses.html">
+          <img src="images/website-esposa-07.webp" alt="Category 4" />
+          <p>Dresses</p>
+          </a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+     
+        <div class="category" id="category-5">
+          <a href="Suits.html">
+          <img src="images/suitscover.jpg" />
+          <p>Suits</p>
+          </a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        
+        <div class="category" id="category-6">
+          <a href="Pajamas.html">
+          <img src=" images/pajamascover.jpg" alt="Category 6" />
+          <p>Pajamas</p>
+          </a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section
+    style="display:flex; flex-direction:column; gap:25px; margin-top:50px; font-family:Arial, sans-serif;margin-bottom: 55px;">
+
+    <style>
+      @media(min-width:800px) {
+        .input-email {
+          width: 40% !important;
+        }
+      }
+
+      .Join-Now {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .Join-Now:hover {
+
+        transform: scale(1.05);
+      }
+
+      
+    </style>
+
+
+    <div style="display:flex; flex-direction:column; gap:15px; align-items:center;">
+
+      <h3 style="font-size:24px; font-weight:bold;">BECOME AN EXCLUSIVE MEMBER</h3>
+      <p style="font-size:16px; color:#555;">Get 10% Off Your First Purchase!</p>
+
+    </div>
+
+    <div style="width:100%;display:flex; justify-content:center; gap:10px;">
+
+      <input class="input-email"
+        style="width:60%; padding:15px; border:1px solid #ccc; border-radius:5px; font-size:14px;" type="email"
+        placeholder="Enter your email">
+      <button class="Join-Now"
+        style="padding:10px 20px; background:#000; color:#fff; border:none; border-radius:5px; cursor:pointer;">Join
+        Now</button>
+
+    </div>
+
+    <div style="display:flex; justify-content:center;">
+
+      <p style="width:80%; text-align:center; font-size:12px; color:#777;">Sign up to receive exclusive offers and
+        updates. You can unsubscribe anytime.</p>
+
+    </div>
+  </section>
+
+
+
+
+  <section id="Contact-us" style="height:400px;background: #000;color: white;padding:30px;">
+    <style>
+      .underline:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+
+    <div style="width:100%;display: flex;flex-direction: row;justify-content: space-between;height:100%;align-items: center;">
+
+
+      <div style="width:50%;display:flex;flex-direction: column;justify-content: space-around;height:100%">
+        <div style="display:flex;justify-content: space-between;">
+
+          <div>
+            <h4 style="text-transform: uppercase;font-family:'lato', Geneva, Tahoma, sans-serif;margin-bottom: 20px;font-size: 12px;">About us</h4>
+            <p style="width:330px;line-height: 1.5;font-size: 19px;color: #ccc;font-family: 'Lato', 'Times New Roman', Times, serif;"> In a realm woven from dreams, Heaven Threads spins fate into every delicate strand, whispering stories
+              of
+              hope and wonder. </p>
+
+          </div>
+
+          <div style="display:flex;flex-direction: column;gap:18px;font-family: 'Lato';">
+            <p  style="text-transform: uppercase;font-size: 10px;">Information</p>
+            <p class="underline" style="color:#ccccccc2;cursor: pointer";>Shipping policy</p>
+            <p   class="underline"  style="color:#ccccccc2;cursor: pointer";>Returns and exchanges</p>
+            <p   class="underline" style="color:#ccccccc2;cursor: pointer";>Privacy policy</p>
+            <p  class="underline" style="color:#ccccccc2;cursor: pointer";>Terms and conditions</p>
+            <p  class="underline" style="color:#ccccccc2;cursor: pointer";>Contact us</p>
+          </div>
+
+        </div>
+
+
+        <div>
+          
+        
+          <p style="width:330px;font-size: 13px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: #777;">Copyright &copy 2025, Heaven Threads.All rights reserved.See our terms of use and privacy notice. </p>
+        </div>
+      </div>
+
+
+
+
+      <div style="height:300px;display: flex;flex-direction: column;gap:30px;font-family:'Lato';">
+        <p style="text-transform: uppercase;font-size: 11px;">Become a New Settler Member</p>
+        
+        
+        <p>Get 10% off your next order!</p>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <input style="background: #000; color: #fff; padding: 10px; border: none; border-bottom: 2px solid #fff; outline: none; flex-grow: 1;" type="text" placeholder="your email">
+          <button style="background: #fff; color: #000; padding: 10px; border: none; cursor: pointer;">Subscribe</button>
+        </div>
+        <p style="margin-top: 10px; color: #fff; font-size: 14px;">
+          Get access to exclusive deals and updates—unsubscribe anytime.</p>
+        
+        <div>
+          
+          <p style="font-size: 15px;margin-top: 15px;margin-bottom: 7px;">Follow us on social media:</p>
+          
+          <div style="display:flex;align-items: center;gap:20px;">
+
+
+            <img style="width:40px;cursor: pointer;" src="images/instagram-logo-black-and-white-transparent-background-free-png.webp">  
+  
+  
+            <img style="width:25px;cursor: pointer;" src="images/1690643591twitter-x-logo-png.webp.png">
+  
+            <img   style="width: 55px;cursor: pointer;" src="images/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.webp">
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+      </div>
+
+
+
+
+
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

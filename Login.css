@@ -1,0 +1,169 @@
+body{
+    background-color:black;
+}
+#welcome{
+    color:white;
+    display:flex;
+    flex-direction:row;
+    gap:24px;
+    margin-left:3%;
+    margin-top:26px;
+    justify-content:center;
+
+}
+.container{
+
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    padding: 40px;
+   
+}
+.formcontrols{
+    width: 30%;
+    height:50%;
+    margin:auto;
+    margin-top:6%;
+    background-color:black;
+    border-radius:0px 20px 0px 20px;
+    border-color:white;
+    border-style: solid;
+    border-width:1px;
+ color:white;
+   
+}
+
+.formcontrols:hover{
+
+    box-shadow:
+     10px 0px 10px -6px  #90e0ef ,
+    -10px 0px 10px -6px pink ,
+     0px 10px 10px -6px  #90e0ef ,
+     0px -10px 10px -6px pink;
+
+   
+    transition: box-shadow 0.4s ease;
+    border-color:rgb(255,255,255);
+    border-style: solid;
+    border-width:2px;
+
+ 
+}
+.formcontrol input{
+    margin:8px 0px 10px 18px;
+    background-color:black;
+    width:85%;
+    border:none;
+    border-bottom: 1px dashed white;
+    padding:10px;
+    color:white;
+}
+.formcontrol label{
+    margin:16px 10px 12px 20px;
+   
+}
+.formcontrol {
+margin-bottom:10px;
+display: flex;
+flex-direction: column;
+}
+.options{
+    display: flex;
+    flex-direction: row; 
+    justify-content: evenly;
+    margin-top:10px;
+}
+hr{
+    background-color:black;
+    color:black;
+    height:25%;
+    width:30%;
+}
+#icons {
+    display: flex;
+    flex-direction: row; 
+    justify-content:center;
+    margin:14px 25% 0px;
+    align-items: center;
+    padding-bottom:16px;
+    padding-top:14px;
+}
+
+#icons img{
+    width: 24px;
+    height: 24px;
+    margin: 0 16px;
+}
+
+#login{
+    color:black;
+    background-color: white;
+    border: none;
+    padding:12px;
+    width:50%;
+    border-radius:14px;
+    margin: 8px 0px 24px 25%;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#signup:hover{
+   border-left:4px solid pink;
+    border-right:4px solid #90e0ef ;
+    border-top:4px solid  #90e0ef ;
+    border-bottom:4px solid pink;
+}
+#welcome1{
+    margin:16px 0px;
+    text-shadow:2px 2px 5px  black;
+   font-size:50px;
+    color: white;
+    position: relative;
+    animation-name: welcome1;
+    animation-duration: 6s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    
+    
+}
+#welcome2{
+    margin:16px 0px;
+    text-shadow:2px 2px 5px  black;
+   font-size:45px;
+   font-weight:bold;
+    color: white;
+    position: relative;
+    animation-name: welcome2;
+    animation-duration: 6s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+
+
+
+@keyframes welcome1 {
+    0%   {text-shadow:2px 2px 20px #F699CD ; 
+    }
+  
+     50% {text-shadow:2px 2px 20px #F699CD;}
+    100% {text-shadow:2px 2px 20px  black; }
+   
+  }
+  @keyframes welcome2 {
+    0%   {text-shadow:0px 0px 20px  #90e0ef; 
+    }
+    50% {text-shadow:0px 0px 20px #90e0ef;}
+   
+    100% {text-shadow:0px 0px 20px  black; }
+   
+  }
+  #result{
+    color:red;
+    padding-left:38%;
+  }
+  
