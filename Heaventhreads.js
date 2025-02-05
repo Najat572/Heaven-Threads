@@ -29,7 +29,7 @@ else if(password==""){
    
     }
     else  {
-        window.location.href="dresses.html";
+        window.location.href="index.html";
         console.log("hi");
     }})
 })
