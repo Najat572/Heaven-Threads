@@ -7,7 +7,7 @@ const displayItem = (items) => {
     document.getElementById('favorites').innerHTML = items.map((item) =>
      {
         const { image, title, price, description } = item;
-        const isadded = cart.filter(cartItem => cartItem).some((cartItem) => cartItem.title === title);
+        const isadded = cart1.filter(cartItem => cartItem).some((cartItem) => cartItem.title === title);
         return `
         <div class='box-container'>
             <div id='box'>
