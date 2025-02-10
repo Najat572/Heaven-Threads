@@ -1,92 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-    <link rel="stylesheet" href="checkout.css">
-    <link rel="icon" href="/diamond-clipart-design-illustration-free-png (1).webp">
-</head>
-<body>
+    <link rel="stylesheet" href="checkout.css" />
+    <link
+      rel="icon"
+      href="images/diamond-clipart-design-illustration-free-png (1).webp"
+    />
+  </head>
+  <body>
     <div id="displaycolumn">
-       
-    <form  method="post"  id="checkout">
+      <form method="post" id="checkout">
         <fieldset id="check">
-            <legend>Billing Details</legend>
-           
-            <label>Country</label>
-            <select name="country" id="country">
-                <option value="" disabled selected>Choose your country</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Canada">Canada</option>
-            </select>
-            <div id="name">
-                <div>
-            <label>First Name</label>
-            <input type="text" id="first_name" name="first_name" required>
-        </div>
-         <div>
-            <label>Last Name</label>
-            <input type="text" id="last_name" name="last_name" required>
-        </div>
-        </div>
-        
-            
-       
-            <label>Company Name</label>
-            <input type="text" id="company" name="company" required>
-            
-               
-            <div class="city">
-                <div>
-                <label>City</label>
-                <input type="text" id="city" name="city" required>
-            </div>
-        <div>
-                <label>Address</label>
-                <input type="text" id="address" name="address" required>
-                </div>
-            </div>
-           <div class="personalinfo">
+          <legend>Billing Details</legend>
+
+          <label>Country</label>
+          <select name="country" id="country">
+            <option value="" disabled selected>Choose your country</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+          </select>
+          <div id="name">
             <div>
-            <label>Email</label>
-            <input type="email" id="email" name="email" required>
+              <label>First Name</label>
+              <input type="text" id="first_name" name="first_name" required />
             </div>
             <div>
-            <label>Phone</label>
-            <input type="text" id="phone" name="phone" required>
+              <label>Last Name</label>
+              <input type="text" id="last_name" name="last_name" required />
             </div>
-           </div>
-           <div id="textbox">
-<label>Order Notes</label>
+          </div>
+
+          <label>Company Name</label>
+          <input type="text" id="company" name="company" required />
+
+          <div class="city">
+            <div>
+              <label>City</label>
+              <input type="text" id="city" name="city" required />
+            </div>
+            <div>
+              <label>Address</label>
+              <input type="text" id="address" name="address" required />
+            </div>
+          </div>
+          <div class="personalinfo">
+            <div>
+              <label>Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label>Phone</label>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+          </div>
+          <div id="textbox">
+            <label>Order Notes</label>
             <textarea id="notes" name="notes" cols="30" rows="5"></textarea>
+          </div>
+        </fieldset>
+      </form>
+      <div>
+        <div id="checkoutproducts"></div>
+        <div id="checkouttotal">
+          <p>
+            Shipping: <span style="font-weight: bold"> Free Shipping </span>
+          </p>
 
-</div>
-</fieldset>
-       
-    </form>
-    <div>
-   
-        <div id="checkoutproducts">
-            
-        </div>
-    <div id="checkouttotal">
-        <p>Shipping: <span style="font-weight: bold"> Free Shipping </span></p>
-
-        <div id="totalsum">
+          <div id="totalsum">
             <div>Order Total:</div>
             <div id="total"></div>
+          </div>
+          <button id="checkoutbtn" type="button">Checkout</button>
         </div>
-        <button id="checkoutbtn" type="button">Checkout</button>
-
-    </div>
-    </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
-    <script src="checkout.js">
-    
-    </script>
-</body>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+    <script src="checkout.js"></script>
+  </body>
 </html>
